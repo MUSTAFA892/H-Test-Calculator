@@ -89,6 +89,11 @@ def main():
         - [SciPy Documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.kruskal.html)
         """)
 
+        st.markdown("### 👥 Team Members")
+        team_members = ["Mustafa A", "Karthik Saran", "Kishaan","Naveen Bharathi","Jayanth Kumar","Mithunavanan","Bensingh","Diwakaran"]
+        for member in team_members:
+            st.markdown(f"- {member}")
+
     # Main content area - create two columns
     col1, col2 = st.columns([2, 3])
     
@@ -317,7 +322,6 @@ def return_example_data():
         st.session_state[f"group_{i}"] = ", ".join(map(str, data))
     
     st.success("Example data loaded! Please go to the input tabs to see the data.")
-
 
 if __name__ == "__main__":
     main()
